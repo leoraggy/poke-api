@@ -1,0 +1,183 @@
+/* Card Container */
+.poke-card {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  width: 320px;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  color: #fff;
+  transition: transform 0.2s ease;
+  background: #a8a878;
+  margin: 0.5rem;
+}
+
+.poke-card:hover {
+  transform: translateY(-5px);
+}
+
+.poke-header {
+  padding: 24px 24px 0 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.poke-name {
+  margin: 0;
+  text-transform: capitalize;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+}
+
+.poke-id {
+  font-weight: bold;
+  opacity: 0.7;
+  font-size: 1.1rem;
+}
+
+.poke-types {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.type-badge {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.poke-img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 160px;
+  margin-top: 10px;
+  z-index: 2;
+}
+
+.poke-image {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+}
+
+.poke-body {
+  background-color: #ffffff;
+  color: #333;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  padding: 40px 24px 24px 24px;
+  margin-top: -30px; /
+}
+
+.poke-dimensions {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.dim-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dim-value {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.dim-label {
+  font-size: 0.8rem;
+  color: #888;
+  margin-top: 4px;
+}
+
+.poke-stats h3 {
+  margin: 0 0 12px 0;
+  font-size: 1rem;
+  color: #444;
+}
+
+.stat-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  font-size: 0.85rem;
+}
+
+.stat-name {
+  width: 90px;
+  text-transform: capitalize;
+  color: #666;
+}
+
+.stat-value {
+  width: 35px;
+  font-weight: bold;
+  text-align: right;
+  margin-right: 10px;
+}
+
+.stat-bar-bg {
+  flex-grow: 1;
+  background-color: #eee;
+  height: 6px;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.stat-bar-fill {
+  background-color: #ff4757;
+  height: 100%;
+  border-radius: 3px;
+  transition: width 0.5s ease;
+}
+
+.fire {
+  background: linear-gradient(135deg, #f08030, #f5a623);
+}
+.water {
+  background: linear-gradient(135deg, #6890f0, #3860c0);
+}
+.grass {
+  background: linear-gradient(135deg, #78c850, #50a030);
+}
+.electric {
+  background: linear-gradient(135deg, #f8d030, #f8b000);
+  color: #333;
+}
+.electric .poke-id,
+.electric .type-badge {
+  color: #333;
+  background: rgba(0, 0, 0, 0.08);
+}
+.psychic {
+  background: linear-gradient(135deg, #f85888, #f82860);
+}
+.ice {
+  background: linear-gradient(135deg, #98d8d8, #68c0c0);
+  color: #333;
+}
+.ice .poke-id,
+.ice .type-badge {
+  color: #333;
+  background: rgba(0, 0, 0, 0.08);
+}
+.dragon {
+  background: linear-gradient(135deg, #7038f8, #4818c0);
+}
+.dark {
+  background: linear-gradient(135deg, #705848, #483830);
+}
+
+.loading {
+  padding: 20px;
+  text-align: center;
+  color: #666;
+}
